@@ -25,6 +25,12 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
+        let lst=[];
+        for(let i=0;i<arr.length;i++){
+            lst.push(arr[i]*val)
+            }
+        
+        return lst   
 }
 
 function removeNthElement(arr, n) {
@@ -35,6 +41,14 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
+        for(let i=0;i<arr.length;i++){
+            if(i===val){
+                arr.splice(i,1)
+            }
+            
+            }
+        
+        return arr
 }
 
 module.exports = {
